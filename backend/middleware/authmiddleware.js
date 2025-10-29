@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+require("dotenv").config();
 const JWT_SECRET = process.env.secret; // secret key for JWT verification (same as in usercontroller.js)
 
 async function authMiddleware(req, res, next) {
